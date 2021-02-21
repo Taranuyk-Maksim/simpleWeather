@@ -11,23 +11,7 @@ import com.taraniuk.seampleweather.data.retrofit.model.CityResponse
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-class MainViewModel @Inject constructor(private val repository: WeatherRepository) : ViewModel() {
+class MainViewModel : ViewModel() {
 
-    private val weatherLiveData = MutableLiveData<CityResponse>()
-
-    fun getWeatherInCity(city: String): LiveData<CityResponse> {
-        viewModelScope.launch {
-            when (val response = repository.getCityWeatherData(city)) {
-                is RequestResult.OnSuccess -> {
-                    Log.d("CityWeather", "getWeatherInCity: ${response.data}")
-                    weatherLiveData.value = response.data
-                }
-                is RequestResult.OnError -> {
-                    Log.d("CityWeather", "getWeatherInCity: ${response.error}")
-                }
-            }
-        }
-        return weatherLiveData
-    }
 
 }

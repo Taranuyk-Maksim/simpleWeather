@@ -5,6 +5,7 @@ import com.taraniuk.seampleweather.di.module.AppModule
 import com.taraniuk.seampleweather.di.module.NetModule
 import com.taraniuk.seampleweather.di.module.ViewModelModule
 import com.taraniuk.seampleweather.ui.MainActivity
+import com.taraniuk.seampleweather.ui.home.view.HomeFragment
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Inject
@@ -20,7 +21,7 @@ import javax.inject.Singleton
 @Singleton
 interface Component {
 
-    fun inject(mainActivity: MainActivity)
+    fun inject(homeFragment: HomeFragment)
 
     @Component.Builder
     interface Builder {
