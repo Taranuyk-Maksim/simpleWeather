@@ -4,8 +4,10 @@ import android.app.Application
 import com.taraniuk.seampleweather.di.module.AppModule
 import com.taraniuk.seampleweather.di.module.NetModule
 import com.taraniuk.seampleweather.di.module.ViewModelModule
+import com.taraniuk.seampleweather.ui.MainActivity
 import dagger.BindsInstance
 import dagger.Component
+import javax.inject.Inject
 import javax.inject.Singleton
 
 @Component(
@@ -17,6 +19,8 @@ import javax.inject.Singleton
 )
 @Singleton
 interface Component {
+
+    fun inject(mainActivity: MainActivity)
 
     @Component.Builder
     interface Builder {
