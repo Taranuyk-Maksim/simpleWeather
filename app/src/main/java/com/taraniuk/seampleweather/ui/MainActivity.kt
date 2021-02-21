@@ -1,7 +1,8 @@
-package com.taraniuk.seampleweather
+package com.taraniuk.seampleweather.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.taraniuk.seampleweather.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
