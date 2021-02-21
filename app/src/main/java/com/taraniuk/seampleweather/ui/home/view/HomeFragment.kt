@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.taraniuk.seampleweather.WeatherApp
 import com.taraniuk.seampleweather.databinding.HomeFragmetBinding
-import com.taraniuk.seampleweather.ui.MainViewModel
 import com.taraniuk.seampleweather.ui.home.viewModel.HomeViewModel
 import javax.inject.Inject
 
