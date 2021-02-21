@@ -16,6 +16,14 @@ interface OpenWeatherApi {
         @Query("q") city : String
     ) : CityResponse
 
+  //  img/w/01n.png
+
+//    @GET("img/w/{id}.png")
+//    suspend fun getSunImage(
+//        @Header("x-rapidapi-host") headerHost: String,
+//        @Header("x-rapidapi-key") headerKey: String,
+//        @Path("id") imageId : String
+//    ) : CityResponse
 
 //    @GET("/user/starred/{owner}/{repo}")
 //    fun isStaredRepository(

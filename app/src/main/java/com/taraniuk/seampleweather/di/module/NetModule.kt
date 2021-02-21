@@ -9,7 +9,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 
-private const val BASE_URL = "https://community-open-weather-map.p.rapidapi.com/"
+const val BASE_URL = "https://community-open-weather-map.p.rapidapi.com/"
+const val BASE_IMAGE_URL = "https://openweathermap.org/img/"
 
 @Module
 class NetModule {
